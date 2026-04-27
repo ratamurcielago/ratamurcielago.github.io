@@ -1,0 +1,154 @@
+  
+  h1,h2,h3 {
+    font-family: "Playwrite CL";
+    color: #8080ff;
+  }
+  h3 {
+    text-align: center;
+  }
+
+  playwrite-cl-<uniquifier> {
+  font-family: "Playwrite CL", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+  p {
+    font-family: "Winky Sans";
+    color: rgb(43, 37, 29);
+    font-size: 0.9rem;
+  }
+
+a:visited {
+  color: #8080ff;
+}
+
+body {
+  background-color: #f2f5de;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    width: 15em;
+    height: auto;
+    padding: 40px;
+  }
+
+.content {
+    grid-area: content;
+    width: 35em;
+  }
+
+  .header {
+    grid-area: header;
+    margin-right: 1.5em;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-columns: auto;
+    grid-template-areas:
+    "....... ....... header"
+    "content content sidebar"
+    "content content ......."
+    "footer  footer  footer";
+    color: #444;
+    align-items: center;
+    padding: 10px;
+  }
+
+
+.box {
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 150%;
+  box-sizing: border-box;
+}
+
+.header {
+  border: 4px #cbb9ff dotted;
+  text-align: center;
+}
+
+.languages {
+    display: flex;
+    gap: .5rem;
+}
+
+.lang-button {
+    background-color: transparent;
+    font-size: 1.25rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.sidebar {
+  border: 4px solid #b190b6;
+  background-color: rgb(194, 236, 175);
+}
+
+.content {
+  border: 4px solid #b190b6;
+  background-color: rgb(194, 236, 175);
+}
+
+.circle {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  width:7em;
+  height:7em;
+  margin-top: -1.5em;
+  margin-bottom: -1em;
+  border-radius: 60%;
+background-repeat: no-repeat;
+  background-image: url(icon.png);
+  background-color: #efffc1;
+  background-size: contain;
+  background-position: center;
+  grid-area: sidebar;
+justify-self: center;
+}
+
+.footer {
+  background-color: rgb(194, 236, 175);
+}
+
+.image-gallery div {
+  width: 25%;
+  margin: 5px;
+  border: 1px solid;
+   box-sizing: border-box;
+  width: calc(25% - 10px);
+  position:relative;
+}
+
+
+.image-gallery div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-gallery div:hover span {
+  opacity: 1;
+  transform: none;
+}
+.sidebar p {
+    margin: 15px;
+    line-height: 1.5;
+}
+
+.footer p {
+  text-align: right;
+}
